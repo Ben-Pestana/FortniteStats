@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsDisplay"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:maxHeight="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lilwhip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_stats_accountId"
+        android:layout_width="368dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="AccountId"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_totalMatches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_stats_username"
+        android:layout_width="368dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="Username"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_console"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView_stats_console"
+        android:layout_width="184dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="Console"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_kdratio"
+        app:layout_constraintEnd_toStartOf="@+id/textView_stats_score"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView_stats_totalKills"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="Total Kills"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_accountId"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_stats_kdratio" />
+
+    <TextView
+        android:id="@+id/textView_stats_score"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="Score"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_totalKills"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_stats_console" />
+
+    <TextView
+        android:id="@+id/textView_stats_totalMatches"
+        android:layout_width="368dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#000000"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="Total Matches Played"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_stats_kdratio"
+        android:layout_width="184dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="6dp"
+        android:text="KD Ratio"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_stats_accountId"
+        app:layout_constraintEnd_toStartOf="@+id/textView_stats_totalKills"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView_stats_boogie"
+        android:layout_width="89dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boogiebomb" />
+
+    <TextView
+        android:id="@+id/textView_stats_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/anton"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="Stats "
+        android:textColor="#ffffff"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

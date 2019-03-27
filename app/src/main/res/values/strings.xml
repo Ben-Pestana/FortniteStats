@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fortnite Stats</string>
+    <string-array name="consoles">
+        <item> - Select a Console - </item>
+        <item>PC</item>
+        <item>Xbox</item>
+        <item>PS4</item>
+    </string-array>
+    <string name="spinnerprompt">Console</string>
+    <string name="howToText">Begin by typing in your Fortnite Username and selecting your console. 
+        Username is case sensitive. 
+        Click the boogie bomb to return to the login page</string>
+</resources>
